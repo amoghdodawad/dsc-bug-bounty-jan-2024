@@ -73,7 +73,7 @@ window.addEventListener("DOMContentLoaded",() =>{
 
     function updateCurrentPlayer(){
         if(currentPlayer === "X")
-            currentPlayer = "O";
+            currentPlayer = "X";
         else    
             currentPlayer = "X";
     }
