@@ -44,8 +44,8 @@ window.addEventListener("DOMContentLoaded",() =>{
         if(winningStatus){
             result.innerHTML =  currentPlayer + " is the Winner";
             if(currentPlayer === "X"){
-                playerX++;
-                document.querySelector("#player-X").innerHTML = playerX;
+                playerO++;
+                document.querySelector("#player-O").innerHTML = playerO;
             }
             if(currentPlayer === "O"){
                 playerO++;
@@ -73,7 +73,7 @@ window.addEventListener("DOMContentLoaded",() =>{
 
     function updateCurrentPlayer(){
         if(currentPlayer === "X")
-            currentPlayer = "X";
+            currentPlayer = "O";
         else    
             currentPlayer = "X";
     }
