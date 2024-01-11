@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Architects Daughter', sans-serif;
+    font-size: 25px;
+    background-color: hsla(220, 15%, 55%,20%);
+}
+
+
+
+.tile-container{
+    height: 280px;
+    width: 280px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.tiles{
+    display: flex;
+    margin: 2px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 8px 8px 25px rgba(0,0,0,0.2);
+    background-color: #eeeecd;
+}
+
+.tiles:hover{
+    cursor: pointer;
+}
+
+.total{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-and-tile-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    border-radius: 20px;
+    background-color: #eae1b4;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.15);
+    height: 500px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reset-container {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 70px;
+    height: 40px;
+    /* top: 90%;
+    left: 45%; */
+    background-color: #eeeecd;
+    border-radius: 10px;
+    box-shadow: 8px 8px 25px rgba(0,0,0,0.2);
+    border: rgba(0, 0, 0, 0);
+    font-family: 'Architects Daughter', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#reset:hover {
+    cursor: pointer;
+}
+
+#result{
+    display: flex;
+    height: 25vh;
+    width: 25vw;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2vh;;
+}
+
+#player-X{
+    display: flex;
+    justify-content: center;
+}
+
+#player-O{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    padding-top: 20px;
+}
+
+th{
+    padding-right: 20px;
+}
